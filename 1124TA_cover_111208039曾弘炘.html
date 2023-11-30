@@ -1,0 +1,82 @@
+<!-- Requirement for HW
+1. Change the background pic from the Internet picture and allow the photo to resize with the frame
+2. Change the font color, size, and letter spacing for Intro to CS
+3. Add an underline under Intro to CS
+4. Let the words place in the horizontal and vertical center 
+5. Change the A practice for the Bootstrap in November 24th into your Student ID, Department, and name -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>1124TA_HW</title>
+    <style type="text/css">
+        .kv {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://www.dnzhuti.com/uploads/allimg/180725/95-1PH5161F5.jpg);
+            /* Resize should be added here */
+        }
+
+        .kv .text {
+            text-align: center;
+            position: absolute;
+            
+         
+            /* Horizontal and vertical center should be added here */
+        }
+
+        .kv .text h1 {
+            color:lightcoral;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 70px;
+            position:relative;
+            text-decoration: underline;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .centered-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Set the height to 100% of the viewport height for vertical centering */
+        }
+
+        .centered-text {
+            text-align: center; /* Center text horizontally */
+            margin-left: 350px;
+        }
+
+        .kv .text p {
+            color:gold;
+            font-size:20px;
+            position:absolute;
+            left:70px;
+            margin-left: 350px;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="kv">
+    <div class="container">
+        <div class="row justify-content-center d-flex align-items-center">
+            <div class="col">
+                <div class="text">
+                    <div class="centered-container">
+                        <div class="centered-text">
+                            <h1>Intro to CS</h1>
+                            <p>111208039,經濟二甲,曾弘炘</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
